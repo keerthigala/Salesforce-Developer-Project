@@ -1,6 +1,5 @@
 public class TernaryOperatorr {
-public TernaryOperatorr()
- {
+public TernaryOperatorr() {
     integer mark1 = 100;
 integer mark2 = 60;
 integer mark3 = 40;
@@ -16,5 +15,8 @@ string grade = (result=='pass')?(average>90)?'S':(average>80)?'A':(average>70)?'
 system.debug('Grade=' + grade);
  }
 }
+
+
+
 
     
