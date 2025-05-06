@@ -1,9 +1,9 @@
 public class Multiple {
     public void record()
     {
-        integer count;
-        integer num = 5;
-        integer result;
+        Integer count;
+        Integer num = 5;
+        Integer result;
         for(count=1;count<=10;count++)
         {
             result = num * count;
