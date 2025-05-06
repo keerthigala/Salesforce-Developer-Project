@@ -1,4 +1,5 @@
 public class PresentBalance {
+    
 public PresentBalance() {
     integer currentBalance = 50000;
 
