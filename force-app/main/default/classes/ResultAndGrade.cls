@@ -8,30 +8,28 @@ public class ResultAndGrade {
         Integer result;
         if(mark1>=35 && mark2>=35 && mark3>=35)
         {
-            system.debug('pass');
-        }
-        else
-        {
-            system.debug('fail');    
-        }
+            System.debug('pass');
+            Decimal average = ((mark1 + mark2 + mark3)/300.0) * 100;
+            System.debug('average=' + average);
         
-        decimal average = ((mark1 + mark2 + mark3)/300.0) * 100;
-        system.debug('average=' + average);
-        
-        if(average>90){
-            system.debug('S');
-        }
-        else if(average>80){
-            system.debug('A');
-        }
-        else if(average>70){
-            system.debug('B');
-        }
-        else if(average>50){
-            system.debug('C');
-        }
-        else{
-            system.debug('No Grade');
+            if(average>90){
+                System.debug('S');
+            }
+            else if(average>80){
+                System.debug('A');
+            }
+            else if(average>70){
+                System.debug('B');
+            }
+            else if(average>50){
+                System.debug('C');
+            }
+            else{
+                System.debug('No Grade');
+            }
+        }else{
+            System.debug('fail');
         }
     }
 }
+    

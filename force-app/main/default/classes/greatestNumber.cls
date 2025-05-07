@@ -1,14 +1,14 @@
 public class greatestNumber {
     public void greater(){
-        integer x = 3;
-        integer y = 10;
-        integer z = 8;
+        Integer x = 3;
+        Integer y = 10;
+        Integer z = 8;
         if(x>y && x>z){
-            system.debug('x is greater');
+            System.debug('x is greater');
         }else if(y>z){
-            system.debug('y is greater');
+            System.debug('y is greater');
         }else{
-            system.debug('z is greater');
+            System.debug('z is greater');
         }
     }
     

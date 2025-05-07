@@ -1,19 +1,19 @@
 public class TernaryOperatorr {
-public TernaryOperatorr() {
-    integer mark1 = 100;
-integer mark2 = 60;
-integer mark3 = 40;
+public void record() {
 
-string result = (mark1>=35 && mark2>=35 && mark3>=35)?'pass':'fail';
-system.debug('result=' + result);
+    Integer mark1 = 100;
+    Integer mark2 = 60;
+    Integer mark3 = 40;
 
-decimal average = ((mark1 + mark2 +mark3) / 300.0) * 100;
+    String result = (mark1>=35 && mark2>=35 && mark3>=35)?'pass':'fail';
+    System.debug('result=' + result);
 
-system.debug(average);
+    Decimal average = ((mark1 + mark2 +mark3) / 300.0) * 100;
+    System.debug(average);
+    String grade = (result=='pass')?(average>90)?'S':(average>80)?'A':(average>70)?'B':(average>50)?'C':'Fail-No Grade':'Fail-No Grade';
+    System.debug('Grade=' + grade);
+}
 
-string grade = (result=='pass')?(average>90)?'S':(average>80)?'A':(average>70)?'B':(average>50)?'C':'Fail-No Grade':'Fail-No Grade';
-system.debug('Grade=' + grade);
- }
 }
 
 

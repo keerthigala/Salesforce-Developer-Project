@@ -1,18 +1,18 @@
 public class CurrentBalance {
     public void record()
     {
-        integer CurrentBalance = 50000;
-        integer enteredAmount = 500;
-        string enteredOption = 'withdrawl' ;
-        integer result;
+        Integer currentBalance = 50000;
+        Integer enteredAmount = 500;
+        String enteredOption = 'withdrawl' ;
+        Integer result;
         if(enteredOption == 'withdrawl'){
-            result = CurrentBalance - enteredAmount;
-            system.debug('CurrentBalance=' + result);
+            result = currentBalance - enteredAmount;
+            System.debug('currentBalance=' + result);
         }else if(enteredOption == 'deposit'){
-            result = CurrentBalance + enteredAmount;
-            system.debug('CurrentBalance=' + result);
+            result = currentBalance + enteredAmount;
+            System.debug('currentBalance=' + result);
         }else{
-            system.debug('Invalid option');
+            System.debug('Invalid option');
         }
     }
     

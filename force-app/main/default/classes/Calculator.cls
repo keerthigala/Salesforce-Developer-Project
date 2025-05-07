@@ -1,9 +1,9 @@
 public class Calculator {
-    public void Calculator() {
+    public void record() {
         
         System.debug('Calculator instance created.');
     }
-    public integer add(integer a, integer b) {
+    public Integer add(integer a, integer b) {
         return a + b;
     }
     public Decimal subtract(Decimal a, Decimal b) {

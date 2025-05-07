@@ -12,8 +12,8 @@ public class OddAndEven {
         {
             evenSum = evenSum + count;   
         }
-        system.debug('sum of odd numbers from 1 to 20 is=' + oddSum);
-        system.debug('sum of even numbers from 1 to 20 is=' + evenSum);
+        System.debug('sum of odd numbers from 1 to 20 is=' + oddSum);
+        System.debug('sum of even numbers from 1 to 20 is=' + evenSum);
     }
     
 }

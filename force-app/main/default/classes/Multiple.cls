@@ -7,7 +7,7 @@ public class Multiple {
         for(count=1;count<=10;count++)
         {
             result = num * count;
-            system.debug(num + '*' + count + '=' + result);
+            System.debug(num + '*' + count + '=' + result);
         }
     }
     
