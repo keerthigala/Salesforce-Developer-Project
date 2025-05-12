@@ -1,27 +1,48 @@
 public class CalculatorBasedOnOperation {
-    public void record()
-    {
-        Integer firstData = 10;
-        Integer secondData = 20;
-        String operator = '+';
-        Integer result;
-        Decimal decimalResult;
-        
+    Decimal firstData = 55.0;
+    Decimal secondData = 45.0;
+    String operator = '+';
+    Decimal result;
+    
+    public void calculate() {
         if (operator == '+') {
-            result = firstData + secondData;
-            System.debug('Result = ' + result);
+            add();
         } else if (operator == '-') {
-            result = firstData - secondData;
-            System.debug('Result = ' + result);
+            subtract();
         } else if (operator == '*') {
-            result = firstData * secondData;
-            System.debug('Result = ' + result);
+            multiply();
         } else if (operator == '/') {
-            result = firstData / secondData;
-            System.debug('Result = ' + result);
+            divide();
         } else {
-            System.debug('Invalid operator');
+            displayInvalidOperator();
         }
     }
     
+    public void add() {
+        result = firstData + secondData;
+        System.debug('Addition Result = ' + result);
+    }
+    
+    public void subtract() {
+        result = firstData - secondData;
+        System.debug('Subtraction Result = ' + result);
+    }
+    
+    public void multiply() {
+        result = firstData * secondData;
+        System.debug('Multiplication Result = ' + result);
+    }
+    
+    public void divide() {
+        if (secondData != 0) {
+            result = firstData / secondData;
+            System.debug('Division Result = ' + result);
+        } else {
+            System.debug('Error: Division by zero');
+        }
+    }
+    
+    public void displayInvalidOperator() {
+        System.debug('Invalid operator: ' + operator);
+    }
 }
